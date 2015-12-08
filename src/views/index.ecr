@@ -15,15 +15,15 @@
       <% $posts.each do |post| %>
         <% post = post as Hash %>
         <% if post["type"] == "post" %>
-          <%= render "src/kamber/views/types/post.ecr" %>
+          <%= render "libs/kamber-theme-default/views/types/post.ecr" %>
         <% elsif post["type"] == "tweet" %>
-          <%= render "src/kamber/views/types/tweet.ecr" %>
+          <%= render "libs/kamber-theme-default/views/types/tweet.ecr" %>
         <% elsif post["type"] == "video" %>
-          <%= render "src/kamber/views/types/video.ecr" %>
+          <%= render "libs/kamber-theme-default/views/types/video.ecr" %>
         <% elsif post["type"] == "gist" %>
-          <%= render "src/kamber/views/types/gist.ecr" %>
+          <%= render "libs/kamber-theme-default/views/types/gist.ecr" %>
         <% elsif post["type"] == "link" %>
-          <%= render "src/kamber/views/types/link.ecr" %>
+          <%= render "libs/kamber-theme-default/views/types/link.ecr" %>
         <% end %>
       <% end %>
       <footer>
