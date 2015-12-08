@@ -6,7 +6,7 @@ def theme_script(path)
   "libs/kamber-theme-default/static/js/#{path}"
 end
 
-def theme_item
+def theme_item(post, contents)
   render "libs/kamber-theme-default/views/post.ecr"
 end
 
