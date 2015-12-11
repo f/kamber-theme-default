@@ -1,9 +1,9 @@
 def theme_style(path)
-  "libs/kamber-theme-default/static/css/#{path}"
+  "libs/kamber-theme-default/public/css/#{path}"
 end
 
 def theme_script(path)
-  "libs/kamber-theme-default/static/js/#{path}"
+  "libs/kamber-theme-default/public/js/#{path}"
 end
 
 def theme_item(post, contents)
