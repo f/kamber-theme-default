@@ -9,26 +9,7 @@
   </head>
   <body>
     <main>
-      <header>
-        <h1><%= $BLOG_TITLE %> <small><%= $BLOG_DESC %></small></h1>
-      </header>
-      <% $posts.each do |post| %>
-        <% post = post.as_h %>
-        <% if post["type"] == "post" %>
-          <%= render "libs/kamber-theme-default/views/types/post.ecr" %>
-        <% elsif post["type"] == "tweet" %>
-          <%= render "libs/kamber-theme-default/views/types/tweet.ecr" %>
-        <% elsif post["type"] == "video" %>
-          <%= render "libs/kamber-theme-default/views/types/video.ecr" %>
-        <% elsif post["type"] == "gist" %>
-          <%= render "libs/kamber-theme-default/views/types/gist.ecr" %>
-        <% elsif post["type"] == "link" %>
-          <%= render "libs/kamber-theme-default/views/types/link.ecr" %>
-        <% end %>
-      <% end %>
-      <footer>
-        <small>Powered by <a href="http://github.com/sdogruyol/kemal">kemal</a> and <a href="http://github.com/f/kamber">kamber</a></small>
-      </footer>
+      <%= content %>
     </main>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script type="text/javascript">
